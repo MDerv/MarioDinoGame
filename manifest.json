@@ -1,0 +1,34 @@
+{
+  "name": "Dino Game Extension",
+  "version": "1.0",
+  "description": "Play the Dino Game with the click of a button!",
+  "permissions": ["activeTab", "declarativeContent", "storage"],
+  "optional_permissions": ["https://mderv.github.io/"],
+  "options_page": "neterrorMario.html",
+
+    "background": {
+    "scripts": ["popup.js"]
+    },
+
+  "browser_action": {
+    "default_popup": "neterrorMario.html",
+    "default_icon": {
+		"16": "images/dino16.png",
+		"32": "images/dino32.png",
+		"48": "images/dino48.png",
+		"128": "images/dino128.png"
+    }
+  },
+  "icons": {
+	"16": "images/dino16.png",
+	"32": "images/dino32.png",
+	"48": "images/dino48.png",
+	"128": "images/dino128.png"
+  },
+
+  "sandbox": {
+  "pages": ["neterrorMario.html"]
+},
+
+  "manifest_version": 2
+}
